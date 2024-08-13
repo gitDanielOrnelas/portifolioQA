@@ -21,7 +21,7 @@ header {
 .logo {
     height: 50px;
     width: 50px; /* Ajuste o tamanho conforme necessário */
-    /*background-image: url('https://t3.ftcdn.net/jpg/02/76/56/08/360_F_276560883_lqejdalZAZcXDfCAFDFUnTe9ktOXSRD4.jpg');*/
+    background-image: url('https://t3.ftcdn.net/jpg/02/76/56/08/360_F_276560883_lqejdalZAZcXDfCAFDFUnTe9ktOXSRD4.jpg');
     background-size: cover; /* Garante que a imagem cubra todo o contêiner */
     background-position: center; /* Centraliza a imagem */
 }
