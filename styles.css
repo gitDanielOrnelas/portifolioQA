@@ -80,7 +80,7 @@ h1 {
 p {
     font-size: 1.2em;
 }
-body {
+body.about {
     background-color: #007BFF; /* Azul */
     display: flex;
     justify-content: center;
