@@ -11,6 +11,7 @@ header {
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
+    position: relative; /* Adicione isso para ajudar com o posicionamento do dropdown */
 }
 
 .logo {
@@ -61,15 +62,34 @@ nav ul.show {
     display: flex; /* Exibir quando .show for adicionado */
 }
 
+/* Estilos para dropdown */
+.dropdown {
+    position: relative; /* Posiciona o dropdown em relação ao seu pai */
+}
+
 .dropdown-content {
     display: none;
-    flex-direction: column;
+    position: absolute; /* Posiciona o dropdown no lugar certo */
+    top: 100%; /* Faz o dropdown aparecer logo abaixo do item do menu */
+    left: 0;
+    background-color: #007BFF;
+    border-radius: 5px;
+    width: 100%; /* Ajuste para corresponder à largura do item pai, se necessário */
+    z-index: 1000; /* Garante que o dropdown fique sobre outros conteúdos */
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    border-bottom: none;
+    display: block;
 }
 
 .dropdown:hover .dropdown-content {
-    display: flex;
-    background-color: #007BFF;
-    border-radius: 5px;
+    display: block; /* Exibe o dropdown ao passar o mouse sobre o item pai */
 }
 
 /* CSS CONTATO */
