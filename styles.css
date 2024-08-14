@@ -72,7 +72,7 @@ nav ul.show {
     position: absolute; /* Posiciona o dropdown no lugar certo */
     top: 100%; /* Faz o dropdown aparecer logo abaixo do item do menu */
     left: 0;
-    background-color: #007BFF;
+    background-color: #009439;
     border-radius: 5px;
     width: 100%; /* Ajuste para corresponder à largura do item pai, se necessário */
     z-index: 1000; /* Garante que o dropdown fique sobre outros conteúdos */
