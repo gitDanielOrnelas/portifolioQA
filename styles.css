@@ -161,12 +161,14 @@ nav ul.show {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #c7ba00;
-        border-radius: 5px;
+        display: none;
         top: 100%;
         left: 0;
-        min-width: 150px;
-        z-index: 1;
+        flex-direction: column;
+        background-color: #00a516;
+        border-radius: 5px;
+        width: 100%; /* Ajuste para corresponder à largura do item pai, se necessário */
+        z-index: 1000; /* Garante que o dropdown fique sobre outros conteúdos */
     }
 
     .dropdown:hover .dropdown-content {
