@@ -20,15 +20,15 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('menu.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('menu-container').innerHTML = data;
-                });
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
         });
-    </script>
+        </script>
+        <script src="script.js"></script>
 </body>
 </html>
