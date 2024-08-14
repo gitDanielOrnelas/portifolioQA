@@ -48,6 +48,10 @@ nav ul {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007BFF;
 }
 
 nav ul li {
@@ -58,7 +62,6 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 15px;
-    background-color: #007BFF;
     display: block;
     border-bottom: 1px solid #0056b3;
 }
@@ -74,12 +77,6 @@ nav ul.show {
 .dropdown-content {
     display: none;
     flex-direction: column;
-}
-
-.dropdown-content li a {
-    padding: 10px 20px;
-    display: block;
-    color: #fff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -102,6 +99,7 @@ p {
     font-size: 1.2em;
 }
 
+/* CSS CONTATO */
 .contact-form {
     background-color: #fff;
     padding: 20px;
@@ -136,6 +134,7 @@ p {
 .contact-form button:hover {
     background-color: #0056b3;
 }
+/********** FIM CSS CONTATO /***********/
 
 /* Estilos para telas maiores */
 @media (min-width: 768px) {
@@ -147,6 +146,7 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        position: static;
     }
 
     nav ul li {
