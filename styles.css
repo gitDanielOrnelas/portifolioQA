@@ -6,16 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
     padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
 }
 
 .logo {
@@ -26,35 +27,49 @@ header {
     background-position: center; /* Centraliza a imagem */
 }
 
+.menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
 
 nav ul li {
-    position: relative;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px;
+    background-color: #007BFF;
     display: block;
+    border-bottom: 1px solid #0056b3;
 }
 
-nav ul li:hover {
-    background-color: #555;
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+nav ul.show {
+    display: flex;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    flex-direction: column;
 }
 
 .dropdown-content li a {
@@ -63,12 +78,10 @@ nav ul li:hover {
     color: #fff;
 }
 
-.dropdown-content li a:hover {
-    background-color: #555;
-}
-
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    background-color: #007BFF;
+    border-radius: 5px;
 }
 
 main {
@@ -120,35 +133,45 @@ p {
     background-color: #0056b3;
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: none;
     }
 
     nav ul {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
     nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 20px;
+        margin-bottom: 0;
     }
 
     nav ul li a {
-        padding: 15px;
-        background-color: #007BFF;
-        border-bottom: 1px solid #0056b3;
+        padding: 10px 15px;
+        background-color: transparent;
+        border-bottom: none;
     }
 
     nav ul li a:hover {
         background-color: #0056b3;
+        border-radius: 5px;
     }
 
-    nav ul.show {
+    .dropdown-content {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        background-color: #007BFF;
+        border-radius: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
         display: flex;
     }
 }
