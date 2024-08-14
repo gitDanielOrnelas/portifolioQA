@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+        });
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Responsiva Mobile</title>
@@ -14,16 +23,6 @@
         <h1>Bem-vindo à Página Responsiva</h1>
         <p>Este é um exemplo de uma página responsiva otimizada para dispositivos móveis.</p>
     </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
-            });
-        });
-        </script>
         <script src="script.js"></script>
 </body>
 </html>
