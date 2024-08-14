@@ -7,34 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-        </div>
-        <button class="menu-toggle">☰</button> <!-- Botão de menu para telas menores -->
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="aboutTest.html">Por que testar?</a></li>
-                <li class="dropdown">
-                    <a href="#">Projetos</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">WEB</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">iOS</a></li>
-                        <li><a href="#">Performance</a></li>
-                        <li><a href="#">Gen AI</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <div id="menu-container"></div> <!-- Container para o menu -->
+
     <main>
         <h1>Bem-vindo à Página Responsiva</h1>
         <p>Este é um exemplo de uma página responsiva otimizada para dispositivos móveis.</p>
     </main>
-    <script src="script.js"></script> <!-- Importando o script -->
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+        });
+    </script>
 </body>
 </html>
