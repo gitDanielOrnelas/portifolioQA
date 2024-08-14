@@ -159,7 +159,6 @@ nav ul.show {
     }
 
     .dropdown-content {
-        display: none;
         position: absolute;
         display: none;
         top: 100%;
@@ -167,6 +166,8 @@ nav ul.show {
         flex-direction: column;
         background-color: #007BFF;
         border-radius: 5px;
+        width: 100%; /* Ajuste para corresponder à largura do item pai, se necessário */
+        z-index: 1000; /* Garante que o dropdown fique sobre outros conteúdos */
     }
 
     .dropdown:hover .dropdown-content {
