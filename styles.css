@@ -164,7 +164,7 @@ nav ul.show {
         top: 100%;
         left: 0;
         flex-direction: column;
-        background-color: #007BFF;
+        background-color: #00a516;
         border-radius: 5px;
         width: 100%; /* Ajuste para corresponder à largura do item pai, se necessário */
         z-index: 1000; /* Garante que o dropdown fique sobre outros conteúdos */
