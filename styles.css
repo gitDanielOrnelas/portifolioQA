@@ -120,3 +120,35 @@ p {
     background-color: #0056b3;
 }
 
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        background-color: #007BFF;
+        border-bottom: 1px solid #0056b3;
+    }
+
+    nav ul li a:hover {
+        background-color: #0056b3;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
