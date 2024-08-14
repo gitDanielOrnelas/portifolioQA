@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Minha Página</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("menu.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("menu-placeholder").innerHTML = data;
-                });
-        });
-    </script>
+    <title>Página Responsiva Mobile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="menu-placeholder"></div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Portfólio">
+        </div>
 
-    <!-- Conteúdo da página -->
+        <button class="menu-toggle">☰</button> <!-- Botão de menu para telas menores -->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="aboutTest.html">Por que testar?</a></li>
+                <li class="dropdown">
+                    <a href="#">Projetos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">WEB</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">iOS</a></li>
+                        <li><a href="#">Performance</a></li>
+                        <li><a href="#">Gen AI</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1>Bem-vindo à Página Responsiva</h1>
         <p>Este é um exemplo de uma página responsiva otimizada para dispositivos móveis.</p>
     </main>
-    
+
+    <script src="script.js"></script> <!-- Importando o script -->
 </body>
 </html>
