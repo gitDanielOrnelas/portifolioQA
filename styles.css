@@ -159,6 +159,7 @@ nav ul.show {
     }
 
     .dropdown-content {
+        display: none;
         position: absolute;
         display: none;
         top: 100%;
