@@ -5,20 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Sobre</title>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch("menu.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("menu-placeholder").innerHTML = data;
-                    });
-            });
-        </script>
 </head>
 <body>
     <div id="menu-placeholder"></div>
     <!-- Conteúdo da página -->
     <button>ABOUT</button>
-     
+    <script src="script.js"></script> <!-- Importando o script -->    
 </body>
 </html>

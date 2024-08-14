@@ -5,15 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Contato</title>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch("menu.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("menu-placeholder").innerHTML = data;
-                    });
-            });
-        </script>
 </head>
     <title>Contato</title>
 </head>
@@ -28,6 +19,7 @@
             <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-    </div>    
+    </div>
+    <script src="script.js"></script> <!-- Importando o script -->    
 </body>
 </html>
