@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #001a35;
     color: #fff;
     position: relative; /* Adicione isso para ajudar com o posicionamento do dropdown */
 }
@@ -39,7 +39,7 @@ nav ul {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #007BFF;
+    background-color: #001a35;
 }
 
 nav ul li {
@@ -89,7 +89,7 @@ nav ul.show {
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #001a35;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -99,56 +99,37 @@ nav ul.show {
 .contact-form button:hover {
     background-color: #0056b3;
 }
-/********** FIM CSS CONTATO /***********/
 
-/* Estilos para telas maiores */
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: transparent;
-    }
-
-    nav ul li {
-        margin-right: 20px;
-        margin-bottom: 0;
-    }
-
-    nav ul li a {
-        padding: 10px 15px;
-        background-color: transparent;
-        border-bottom: none;
-    }
-
-    nav ul li a:hover {
-        background-color: #0056b3;
-        border-radius: 5px;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        display: none;
-        top: 100%;
-        left: 0;
-        flex-direction: column;
-        background-color: #00a516;
-        border-radius: 5px;
-        width: 100%; /* Ajuste para corresponder à largura do item pai, se necessário */
-        z-index: 1000; /* Garante que o dropdown fique sobre outros conteúdos */
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: flex;
-    }
-
-    main {
-        padding: 20px;
-        text-align: center;
-    }
+main {
+    padding: 20px;
+    text-align: center;
 }
+
+/********** FIM CSS CONTATO ***********/
+
+/********** Menu dropdown projetos ***********/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
