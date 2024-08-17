@@ -23,5 +23,84 @@
         <h1>Página de formulários</h1>
         <p>.</p>
     </main>
+    <link rel="stylesheet" href="styles_form.css">
+    <h1>Formulário Completo</h1>
+    <form action="/submit" method="POST">
+        <!-- Texto simples -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <!-- Número -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" max="100"><br><br>
+
+        <!-- Data -->
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento"><br><br>
+
+        <!-- Telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx"><br><br>
+
+        <!-- URL -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://www.example.com"><br><br>
+
+        <!-- Combobox -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="angola">Angola</option>
+            <option value="moçambique">Moçambique</option>
+        </select><br><br>
+
+        <!-- Radio buttons -->
+        <p>Gênero:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label><br><br>
+
+        <!-- Checkboxes -->
+        <p>Áreas de Interesse:</p>
+        <input type="checkbox" id="tecnologia" name="interesse" value="tecnologia">
+        <label for="tecnologia">Tecnologia</label><br>
+        <input type="checkbox" id="esportes" name="interesse" value="esportes">
+        <label for="esportes">Esportes</label><br>
+        <input type="checkbox" id="musica" name="interesse" value="musica">
+        <label for="musica">Música</label><br><br>
+
+        <!-- Range -->
+        <label for="satisfacao">Nível de Satisfação:</label>
+        <input type="range" id="satisfacao" name="satisfacao" min="0" max="10"><br><br>
+
+        <!-- Arquivo -->
+        <label for="curriculo">Anexar Currículo:</label>
+        <input type="file" id="curriculo" name="curriculo"><br><br>
+
+        <!-- Texto grande -->
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea><br><br>
+
+        <!-- Checkbox de aceite -->
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Eu aceito os termos e condições</label><br><br>
+
+        <!-- Botão de enviar -->
+        <input type="submit" value="Enviar">
+    </form>
+
+
 </body>
 </html>
