@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chamando Menu.html -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+        });
+        </script>
     <title>Página Inicial/title>
 </head>
 <body>
@@ -14,6 +24,5 @@
         <h1>Bem-vindo à Página de Teste</h1>
         <p>Aqui você poderá testar alguns formulários e usar técnicas de teste, para aprendizado.</p>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
