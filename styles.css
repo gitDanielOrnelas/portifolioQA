@@ -82,7 +82,8 @@ nav ul li:hover {
 .form-container {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
-    height: 90vh;            /* Garante que o contêiner ocupe toda a altura da viewport */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Garante que o contêiner ocupe toda a altura da viewport */
 }
 
 main {
