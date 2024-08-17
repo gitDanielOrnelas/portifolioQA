@@ -100,19 +100,19 @@
     </form>
     <!-- Envio fake do formulário -->
     <script>
-        document.querySelector('form_completo').addEventListener('submit', function(event) {
+        document.getElementById('form_completo').addEventListener('submit', function(event) {
             event.preventDefault(); // Previne o envio real do formulário
-
+    
             // Simula uma operação de envio (por exemplo, exibe uma mensagem)
             var responseMessage = document.getElementById('response-message');
-            var responseModal = document.getElementById('response-modal');
-            
-            responseMessage.innerHTML = '<p>Seu formulário foi enviado com sucesso!</p>';
-
+            responseMessage.style.display = 'block';
+            responseMessage.innerHTML = '<p>Seu formulário foi enviado com sucesso! (Simulação)</p>';
+    
             // Aqui você pode adicionar lógica adicional, como limpar o formulário, etc.
-            document.querySelector('form_completo').reset();
+            // document.getElementById('form_completo').reset();
         });
     </script>
+    
     </br></br></br>
     <!-- Mensagem de resposta falsa -->
     <div id="response-message" style="display:flex;" align="center"></div> 
