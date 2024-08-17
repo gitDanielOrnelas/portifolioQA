@@ -58,7 +58,7 @@ nav ul li:hover {
     color: #333;
 }
 .contact-form input, .contact-form textarea {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
