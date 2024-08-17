@@ -4,15 +4,6 @@ body {
     color: #333;
 }
 
-body.contact {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;      /* Centraliza verticalmente */
-    height: 100vh;            /* Faz com que o body ocupe 100% da altura da tela */
-    margin: 0;                /* Remove as margens do body */
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -85,6 +76,23 @@ nav ul li:hover {
 }
 .contact-form button:hover {
     background-color: #001986;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Garante que o contêiner ocupe toda a altura da viewport */
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;  /* Garante que o padding seja incluído na largura total */
 }
 
 main {
