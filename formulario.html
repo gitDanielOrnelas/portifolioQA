@@ -98,13 +98,6 @@
         <!-- Botão de enviar -->
         <input type="submit" value="Enviar">
     </form>
-    <!-- Modal Popup-->
-    <div id="response-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p id="response-message"></p>
-        </div>
-    </div>
     <!-- Envio fake do formulário -->
     <script>
         document.querySelector('form_completo').addEventListener('submit', function(event) {
@@ -115,16 +108,10 @@
             var responseModal = document.getElementById('response-modal');
             
             responseMessage.innerHTML = '<p>Seu formulário foi enviado com sucesso!</p>';
-            responseModal.style.display = 'flex'; // Exibe o modal
 
             // Aqui você pode adicionar lógica adicional, como limpar o formulário, etc.
             document.querySelector('form_completo').reset();
         });
-
-        // Função para fechar o modal
-        function closeModal() {
-            document.getElementById('response-modal').style.display = 'none';
-        }
     </script>
     </br></br></br>
     <!-- Mensagem de resposta falsa -->
