@@ -84,7 +84,7 @@ nav ul li:hover {
 .form-container {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
-    align-items: 100px;      /* Centraliza verticalmente */
+    align-items: 200px;      /* Centraliza verticalmente */
 }
 
 main {
