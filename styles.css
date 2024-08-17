@@ -50,7 +50,7 @@ nav ul li:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
-    box-sizing: border-box;  /* Garante que o padding seja incluído na largura total */
+    box-sizing: content-box;  /* Garante que o padding seja incluído na largura total */
 }
 .contact-form h2 {
     margin-bottom: 20px;
