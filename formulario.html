@@ -23,7 +23,7 @@
     <main>
     </main>
     <h1>Formulário Completo</h1>
-    <form action="/submit" method="POST">
+    <form id="form_completo" action="/submit" method="POST">
         <!-- Texto simples -->
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -103,7 +103,7 @@
     <div id="response-message" style="display:none;"></div> 
     <!-- Envio fakedo formulário -->
     <script>
-        document.getElementById('form').addEventListener('submit', function(event) {
+        document.getElementById('form_completo').addEventListener('submit', function(event) {
             event.preventDefault(); // Previne o envio real do formulário
 
             // Simula uma operação de envio (por exemplo, exibe uma mensagem)
