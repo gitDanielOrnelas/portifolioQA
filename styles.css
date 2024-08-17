@@ -62,7 +62,7 @@ nav ul.show {
     display: flex; /* Exibir quando .show for adicionado */
 }
 
-/* CSS CONTATO */
+/********* CSS CONTATO *********/
 .contact-form {
     background-color: #fff;
     padding: 20px;
