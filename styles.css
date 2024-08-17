@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #e0e5fd;
+    background-color: #001a35;
     color: #fff;
     position: relative; /* Adicione isso para ajudar com o posicionamento do dropdown */
 }
@@ -30,7 +30,7 @@ nav ul {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #0056b3;
+    background-color: #e0e5fd;
 }
 
 nav ul li {
@@ -42,11 +42,11 @@ nav ul li a {
     text-decoration: none;
     padding: 15px;
     display: block;
-    border-bottom: 1px solid #0056b3;
+    border-bottom: 1px solid #e0e5fd;
 }
 
 nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #e0e5fd;
 }
 
 /********* CSS CONTATO *********/
@@ -54,7 +54,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 225, 225, 0.1);
     width: 100%;
     max-width: 400px;
     align-items: center;
