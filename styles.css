@@ -11,8 +11,6 @@ body.contact-form {
     align-items: center;      /* Centraliza verticalmente */
     height: 100vh;            /* Faz com que o body ocupe 100% da altura da tela */
     margin: 0;                /* Remove as margens do body */
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
