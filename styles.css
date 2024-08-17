@@ -81,18 +81,13 @@ nav ul li:hover {
     background-color: #001986;
 }
 
-.contact-form text {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
-}
-
 .form-container {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
     align-items: center;      /* Centraliza verticalmente */
     height: 100vh;            /* Garante que o contêiner ocupe toda a altura da viewport */
+    padding: 20px;            /* Adiciona espaço ao redor do contêiner para evitar que o conteúdo encoste nas bordas da tela */
+    box-sizing: border-box;   /* Inclui o padding e a borda na largura e altura total do elemento */
 }
 
 main {
