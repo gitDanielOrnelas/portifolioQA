@@ -22,15 +22,6 @@ header {
     background-position: center; /* Centraliza a imagem */
 }
 
-.menu-toggle {
-    display: block;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -109,7 +100,7 @@ main {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #001986;
+    background-color: #e0e5fd;
     min-width: 150px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -118,11 +109,11 @@ main {
 .dropdown-content li a {
     padding: 10px 20px;
     display: block;
-    color: #fff;
+    color: #e0e5fd;
 }
 
 .dropdown-content li a:hover {
-    background-color: #555;
+    background-color: #e0e5fd;
 }
 
 .dropdown:hover .dropdown-content {
