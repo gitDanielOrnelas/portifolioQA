@@ -81,7 +81,7 @@ nav ul li:hover {
     background-color: #001986;
 }
 
-text {
+.contact-form text {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
