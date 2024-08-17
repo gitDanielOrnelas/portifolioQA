@@ -49,9 +49,11 @@ nav ul li:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
     box-sizing: border-box;  /* Garante que o padding seja incluído na largura total */
 }
+
 .contact-form h2 {
     margin-bottom: 20px;
     font-size: 24px;
