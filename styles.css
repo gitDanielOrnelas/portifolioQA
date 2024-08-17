@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -10,7 +10,6 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #001a35;
-    color: #e0e5fd;
     position: relative; /* Adicione isso para ajudar com o posicionamento do dropdown */
 }
 
@@ -23,30 +22,23 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Oculto por padrão para telas menores */
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background-color: #e0e5fd;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    margin-bottom: 10px;
+    position: relative;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px 20px;
     display: block;
-    border-bottom: 1px solid #e0e5fd;
 }
 
-nav ul li a:hover {
-    background-color: #e0e5fd;
+nav ul li:hover {
+    background-color: #555;
 }
 
 /********* CSS CONTATO *********/
