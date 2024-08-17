@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #001a35;
+    background-color: #e0e5fd;
     color: #fff;
     position: relative; /* Adicione isso para ajudar com o posicionamento do dropdown */
 }
