@@ -98,23 +98,37 @@
         <!-- Botão de enviar -->
         <input type="submit" value="Enviar">
     </form>
-    <!-- Envio fakedo formulário -->
+    <!-- Envio fake do formulário -->
     <script>
-        document.getElementById('form_completo').addEventListener('submit', function(event) {
+        document.querySelector('form_completo').addEventListener('submit', function(event) {
             event.preventDefault(); // Previne o envio real do formulário
 
             // Simula uma operação de envio (por exemplo, exibe uma mensagem)
             var responseMessage = document.getElementById('response-message');
-            responseMessage.style.display = 'block';
+            var responseModal = document.getElementById('response-modal');
+            
             responseMessage.innerHTML = '<p>Seu formulário foi enviado com sucesso!</p>';
+            responseModal.style.display = 'flex'; // Exibe o modal
 
             // Aqui você pode adicionar lógica adicional, como limpar o formulário, etc.
-            document.getElementById('form_completo').reset();
+            document.querySelector('form_completo').reset();
         });
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById('response-modal').style.display = 'none';
+        }
     </script>
 </br></br></br>
     <!-- Mensagem de resposta falsa -->
     <div id="response-message" style="display:flex;" align="center"></div> 
+        <!-- Modal -->
+        <div id="response-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="response-message"></p>
+            </div>
+        </div>
 </br></br></br>
 </body>
 </html>
