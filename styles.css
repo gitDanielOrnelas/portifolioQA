@@ -48,9 +48,9 @@ nav ul li:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    box-sizing: content-box;  /* Garante que o padding seja incluído na largura total */
+    box-sizing: border-box;  /* Garante que o padding seja incluído na largura total */
 }
 .contact-form h2 {
     margin-bottom: 20px;
@@ -82,8 +82,7 @@ nav ul li:hover {
 .form-container {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;      /* Centraliza verticalmente */
-    height: 100vh;            /* Garante que o contêiner ocupe toda a altura da viewport */
+    height: 90vh;            /* Garante que o contêiner ocupe toda a altura da viewport */
 }
 
 main {
