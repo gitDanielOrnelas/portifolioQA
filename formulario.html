@@ -112,8 +112,9 @@
 
             // Simula uma operação de envio (por exemplo, exibe uma mensagem)
             var responseMessage = document.getElementById('response-message');
-            responseMessage.style.display = 'block';
-            responseMessage.innerHTML = '<p>Seu formulário foi enviado com sucesso! (Simulação)</p>';
+            var responseModal = document.getElementById('response-modal');
+
+            responseMessage.innerHTML = '<p>Seu formulário foi enviado com sucesso!</p>';
             responseModal.style.display = 'flex'; // Exibe o modal
 
             // Aqui você pode adicionar lógica adicional, como limpar o formulário, etc.
