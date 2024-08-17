@@ -1,5 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Faz com que o body ocupe 100% da altura da tela */
+    margin: 0;                /* Remove as margens do body */
     background-color: #f4f4f4;
     color: #333;
 }
@@ -49,8 +54,7 @@ nav ul li:hover {
     box-shadow: 0 0 10px rgba(255, 225, 225, 0.1);
     width: 100%;
     max-width: 400px;
-    align-items: center;
-    position: center;
+    box-sizing: border-box;  /* Garante que o padding seja incluído na largura total */
 }
 .contact-form h2 {
     margin-bottom: 20px;
