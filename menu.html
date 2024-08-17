@@ -1,12 +1,11 @@
 <header>
     <div class="logo">
     </div>
-    <button class="menu-toggle">☰</button> <!-- Botão de menu para telas menores -->
     <nav>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Sobre</a></li>
-            <li><a href="aboutTest.html">Por que testar?</a></li>
+            <li><a href="aboutTest.html">Formulário de cadastro</a></li>
             <li class="dropdown">
                 <a href="#">Projetos</a>
                 <ul class="dropdown-content">
@@ -22,17 +21,4 @@
         </ul>
     </nav>
 </header>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('nav ul');
-
-    if (menuToggle && menu) {
-        menuToggle.addEventListener('click', function() {
-            menu.classList.toggle('show');
-        });
-    } else {
-        console.error("Elemento menu-toggle ou nav ul não encontrado.");
-    }
-});
 </script>
