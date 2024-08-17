@@ -4,7 +4,7 @@ body {
     color: #333;
 }
 
-body.contact-form {
+body.contact {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
