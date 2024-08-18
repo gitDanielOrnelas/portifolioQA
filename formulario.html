@@ -6,15 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- chamando Menu.html -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
-            });
-        });
-        </script>
+    <script src="script_menu.js"></script>
     <title>Formulários</title>
 </head>
 <body>
@@ -105,7 +97,7 @@
             <p id="response-message"></p>
         </div>
     </div>
-    <!-- Envio fakedo formulário -->
+    <!-- Envio fake do formulário -->
     <script>
         document.getElementById('form_completo').addEventListener('submit', function(event) {
             event.preventDefault(); // Previne o envio real do formulário
