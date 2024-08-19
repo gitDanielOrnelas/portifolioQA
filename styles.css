@@ -161,3 +161,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Centralizando imagem index*/
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
