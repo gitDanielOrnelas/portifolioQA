@@ -167,7 +167,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Garante que o container ocupe a altura total da tela */
+    height: 80vh; /* Garante que o container ocupe a altura total da tela */
 }
 img {
     max-width: 100%;
