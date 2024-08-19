@@ -168,7 +168,7 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 100%; /* Garante que ocupe pelo menos 100% da altura da tela */
-    padding: 40px; /* Adiciona um pouco de espaçamento interno */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
     box-sizing: border-box; /* Inclui padding no cálculo da altura */
 }
 img {
