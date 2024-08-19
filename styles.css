@@ -66,6 +66,7 @@ nav ul li:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    resize: vertical;
 }
 .contact-form button {
     width: 100%;
