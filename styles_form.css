@@ -10,6 +10,11 @@ h1 {
     color: #333;
 }
 
+h5 {
+    text-align: center;
+    color: #333;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
