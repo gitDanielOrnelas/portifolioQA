@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Sobre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- chamando Menu.html -->
+    <script src="script_menu.js"></script>
+        <title>API Request Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            #result {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- Container para o menu -->
+    <div id="menu-container"></div>
+
+    <!-- API -->
+    <h1>Consulta à API WordsAPI</h1>
+    <button id="fetch-data">Buscar Dados</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('fetch-data').addEventListener('click', function() {
+            fetch('https://wordsapiv1.p.mashape.com/words/Blog', {
+                method: 'GET',
+                headers: {
+                    'X-Mashape-Key': 'YOUR_API_KEY' // Substitua YOUR_API_KEY pela sua chave da API
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultDiv = document.getElementById('result');
+                resultDiv.innerHTML = `
+                    <h2>Palavra: ${data.word}</h2>
+                    <p><strong>Definições:</strong></p>
+                    <ul>
+                        ${data.results.map(result => `
+                            <li>
+                                <strong>Definição:</strong> ${result.definition}<br>
+                                <strong>Parte do Discurso:</strong> ${result.partOfSpeech}<br>
+                                <strong>Sinônimos:</strong> ${result.synonyms.join(', ')}<br>
+                                <strong>Exemplos:</strong> ${result.examples.join(', ')}
+                            </li>
+                        `).join('')}
+                    </ul>
+                `;
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
+        });
+    </script>
+
+    <!-- Créditos-->   
+    <footer>
+        <p>&copy; 2024 qabyornelas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
