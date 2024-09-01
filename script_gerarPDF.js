@@ -36,6 +36,11 @@ document.getElementById('form_completo').addEventListener('submit', function(eve
         doc.text(`Nível de Satisfação: ${satisfacao}`, 10, 110);
         doc.text(`Mensagem: ${mensagem}`, 10, 120);
 
+        // Obtém a data e a hora atual
+        const now = new Date();
+        const dateStr = now.toLocaleDateString('pt-BR').replace(/\//g, '-');
+        const timeStr = now.toLocaleTimeString('pt-BR').replace(/:/g, '-');
+    
         // Define o nome do arquivo com a data e hora
         const fileName = `formulario_${dateStr}_${timeStr}.pdf`;
         alert("PDF salvo com sucesso!");
