@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <!-- chamando Menu.html -->
     <script src="script_menu.js"></script>
-        <title>API Request Example</title>
-        <style>
-            #result {
-                margin-top: 20px;
-            }
-        </style>
     </head>
     <body>
     <!-- Container para o menu -->
@@ -22,40 +16,6 @@
     <h1>Consulta à API WordsAPI</h1>
     <button id="fetch-data">Buscar Dados</button>
     <div id="result"></div>
-
-    <script>
-        document.getElementById('fetch-data').addEventListener('click', function() {
-            fetch('https://wordsapiv1.p.mashape.com/words/Blog', {
-                method: 'GET',
-                headers: {
-                    'X-Mashape-Key': 'YOUR_API_KEY' // Substitua YOUR_API_KEY pela sua chave da API
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                const resultDiv = document.getElementById('result');
-                resultDiv.innerHTML = `
-                    <h2>Palavra: ${data.word}</h2>
-                    <p><strong>Definições:</strong></p>
-                    <ul>
-                        ${data.results.map(result => `
-                            <li>
-                                <strong>Definição:</strong> ${result.definition}<br>
-                                <strong>Parte do Discurso:</strong> ${result.partOfSpeech}<br>
-                                <strong>Sinônimos:</strong> ${result.synonyms.join(', ')}<br>
-                                <strong>Exemplos:</strong> ${result.examples.join(', ')}
-                            </li>
-                        `).join('')}
-                    </ul>
-                `;
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-            });
-        });
-    </script>
-    <iframe src="https://gamma.app/embed/vxmp2w776ab42hk" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="Introdução à Pirâmide de Teste"></iframe>
-    <!-- Créditos-->   
     <footer>
         <p>&copy; 2024 qabyornelas. Todos os direitos reservados.</p>
     </footer>
