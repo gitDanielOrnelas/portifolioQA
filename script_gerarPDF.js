@@ -1,4 +1,4 @@
-document.getElementById('formulario').addEventListener('submit', function(event) {
+document.getElementById('form_completo').addEventListener('submit', function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 
     try {
