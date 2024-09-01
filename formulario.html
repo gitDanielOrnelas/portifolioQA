@@ -97,12 +97,7 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <p id="response-message"></p>
         </div>
-    </div>
-
-    <!-- Gerar PDF do formulário ao clicar no submit -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="script_gerarPDF.js"></script>
-    
+    </div> 
     <!-- Envio fake do formulário -->
     <script>
         document.getElementById('form_completo').addEventListener('submit', function(event) {
@@ -123,12 +118,12 @@
         function closeModal() {
         document.getElementById('response-modal').style.display = 'none';
         }
-        // Aqui você pode adicionar lógica adicional, como limpar o formulário, etc.
-        document.getElementById('contact-form').reset();
     </script>
+    <!-- Gerar PDF do formulário ao clicar no submit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script_gerarPDF.js"></script>
 
     </br></br></br>
-
     <!-- Modal Popup-->
     <div id="response-modal" class="modal">
         <div class="modal-content">
