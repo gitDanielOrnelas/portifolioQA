@@ -36,8 +36,8 @@ document.getElementById('form_completo').addEventListener('submit', function(eve
         doc.text(`Nível de Satisfação: ${satisfacao}`, 10, 110);
         doc.text(`Mensagem: ${mensagem}`, 10, 120);
 
-        // Tenta salvar o PDF
-        doc.save('formulario.pdf');
+        // Define o nome do arquivo com a data e hora
+        const fileName = `formulario_${dateStr}_${timeStr}.pdf`;
         alert("PDF salvo com sucesso!");
 
     } catch (error) {
