@@ -68,6 +68,7 @@ textarea {
     resize: vertical;
 }
 
+/* Estilo para o botão de Enviar */
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -76,8 +77,12 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 18px;
-    width: 100%;
+    width: 49%; /* Ajuste para permitir que os botões fiquem lado a lado */
+    display: inline-block; /* Exibe os botões em linha */
+    margin-right: 2%; /* Adiciona espaço entre os botões */
 }
+
+/* Estilo para o botão de Limpar */
 input[type="reset"] {
     background-color: #af4c60;
     color: white;
@@ -86,7 +91,8 @@ input[type="reset"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 18px;
-    width: 100%;
+    width: 49%; /* Ajuste para permitir que os botões fiquem lado a lado */
+    display: inline-block; /* Exibe os botões em linha */
 }
 
 input[type="submit"]:hover {
