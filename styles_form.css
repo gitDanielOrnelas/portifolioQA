@@ -78,6 +78,16 @@ input[type="submit"] {
     font-size: 18px;
     width: 100%;
 }
+input[type="reset"] {
+    background-color: #af4c60;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
 
 input[type="submit"]:hover {
     background-color: #45a049;
