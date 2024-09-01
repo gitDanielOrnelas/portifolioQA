@@ -42,7 +42,10 @@ document.getElementById('form_completo').addEventListener('submit', function(eve
         const timeStr = now.toLocaleTimeString('pt-BR').replace(/:/g, '-');
     
         // Define o nome do arquivo com a data e hora
-        const fileName = 'formulario_${dateStr}_${timeStr}.pdf';
+        const fileName = `formulario_${dateStr}_${timeStr}.pdf`;
+
+        // Tenta salvar o PDF
+        doc.save(fileName);
         alert("PDF salvo com sucesso!");
 
     } catch (error) {
